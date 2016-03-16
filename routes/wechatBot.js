@@ -6,7 +6,7 @@ var Action = AV.Object.extend('Action');
 var wechat = require('wechat');
 
 var WechatAPI = require('wechat-api');
-var api = new WechatAPI('','');
+var api = new WechatAPI('','');//此处添加公众号的appid和appsecret
 
 function pickWater(user, thenCB){
     var post = new Action();
