@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+    <title>战五渣榜</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"/>
+    <style>
+        .ranklist{
+            width: 40%;
+        }
+
+        li.list-group-item{
+            display: list-item;
+        }
+
+        @media screen and (max-width: 800px) {
+            .ranklist{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>战五渣榜</h1>
+<article>
+    <section class="ranklist">
+        <ol class="list-group">
+            <% for(var v in topper) {%>
+            <li class="list-group-item"><%=  topper[v] %></li>
+            <% } %>
+        </ol>
+    </section>
+</article>
+</body>
+</html>
